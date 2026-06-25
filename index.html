@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>핵 막 써</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div>HP: <span id="hp">5</span></div>
+    <div>탐지: <span id="detection">0</span>%</div>
+    <div id="bar">
+      <div id="bar-fill"></div>
+    </div>
+    <div id="log">핵 막 써 - 시작</div>
+  </div>
+
+  <div id="controls">
+    <button data-hack="bulletDelete">BULLET<br>DELETE</button>
+    <button data-hack="timeStop">TIME<br>STOP</button>
+    <button data-hack="overflow">DAMAGE<br>OVERFLOW</button>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
